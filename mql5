@@ -1,0 +1,64 @@
+
+// Last N candles most visited level
+// Developer's site: forexroboteasy.com
+// Developed by: Forex Robot Easy Team
+
+#property strict
+
+// Input parameters
+input int N = 10; // Number of candles to analyze
+
+// Data structure to store candle data
+struct CandleData {
+   double high;
+   double low;
+   double open;
+   double close;
+};
+
+// Function to retrieve last N candles data from Forex market API
+CandleData[] GetLastNCandlesData() {
+   CandleData[] candles;
+   
+   // Code to retrieve data from Forex market API
+   
+   return candles;
+}
+
+// Function to calculate the visit count for each level
+int[] CalculateVisitCount(CandleData[] candles) {
+   int[] visitCount;
+   
+   // Code to calculate visit count for each level
+   
+   return visitCount;
+}
+
+// Function to determine the most visited level
+double DetermineMostVisitedLevel(int[] visitCount) {
+   double mostVisitedLevel;
+   
+   // Code to determine the most visited level
+   
+   return mostVisitedLevel;
+}
+
+// Function to display the most visited level to the user
+void DisplayMostVisitedLevel(double mostVisitedLevel) {
+   // Code to display the most visited level to the user
+}
+
+// Entry point of the program
+void OnStart() {
+   // Retrieve last N candles data
+   CandleData[] candles = GetLastNCandlesData();
+   
+   // Calculate visit count for each level
+   int[] visitCount = CalculateVisitCount(candles);
+   
+   // Determine the most visited level
+   double mostVisitedLevel = DetermineMostVisitedLevel(visitCount);
+   
+   // Display the most visited level to the user
+   DisplayMostVisitedLevel(mostVisitedLevel);
+}
